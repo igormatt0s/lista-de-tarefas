@@ -7,6 +7,19 @@ body {
     box-sizing: border-box;
 }
 
+.header h2 {
+    font-family: Arial;
+    font-size: 28px;
+}
+
+.paragrafo {
+    font-family: Arial;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -88,10 +101,13 @@ ul li {
 .novo-item {
     background-color: green; /* Altere para a cor desejada */
     color: white;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 ul li:hover {
     background: #ddd;
+    color: black;
 }
 
 ul li.checked {
@@ -146,16 +162,11 @@ input {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
+    font-family: Arial;
 }
 
 .addBtn:hover {
     background-color: #bbb;
-}
-
-.paragrafo {
-    margin-inline: 150px;
-    text-align: center;
-    font-size: 20px;
 }
 
 .limpaBtn {

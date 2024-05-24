@@ -25,16 +25,11 @@ list.addEventListener('click', function (ev) {
 function addElemento() {
     let li = document.createElement("li");
     let inputValue = document.getElementById("tarefa").value;
-
-    const dataAtual = new Date();
-    const dia = dataAtual.getDate(); // Dia do mês (1-31)
-    const mes = dataAtual.getMonth(); // Mês (0-11, janeiro é 0)
-    const ano = dataAtual.getFullYear();
-    const data = `${dia}/${mes + 1}/${ano} - `;
-
-    let t = document.createTextNode(data + inputValue);
-
+    let t = document.createTextNode(inputValue);
     li.appendChild(t);
+    li.classList.add("novo-item");
+    li.style.fontFamily = 'Arial';
+
     if (inputValue === '') {
         alert("Você precisa descrever a tarefa");
     } else {
@@ -52,14 +47,15 @@ function addElemento() {
             div.style.display = "none";
         }
     }
-}    
+}
 
-let listItems = document.querySelectorAll('li');
+const listItems = document.querySelectorAll('li');
 const newFontFamily = 'Arial';
 
 listItems.forEach(item => {
     item.style.fontFamily = newFontFamily;
 });
+
 
 function limpaLista() {
     let itemLista = document.getElementById('itemLista');
