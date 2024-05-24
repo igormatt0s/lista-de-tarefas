@@ -45,3 +45,10 @@ function addElemento() {
         }
     }
 }    
+
+const listItems = document.querySelectorAll('li');
+const newFontFamily = 'Arial';
+
+listItems.forEach(item => {
+  item.style.fontFamily = newFontFamily;
+});
