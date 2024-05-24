@@ -150,3 +150,9 @@ input {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+.paragrafo {
+    margin-inline: 150px;
+    text-align: center;
+    font-size: 20px;
+}
