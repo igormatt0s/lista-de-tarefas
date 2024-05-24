@@ -10,6 +10,7 @@ body {
 .header h2 {
     font-family: Arial;
     font-size: 28px;
+    padding: 10px;
 }
 
 .paragrafo {
@@ -45,6 +46,10 @@ ul li {
     padding: 30px 40px;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header:after {
@@ -57,7 +62,7 @@ input {
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 800px;
     padding: 10px;
     float: left;
     font-size: 16px;
