@@ -27,6 +27,9 @@ function addElemento() {
     let inputValue = document.getElementById("tarefa").value;
     let t = document.createTextNode(inputValue);
     li.appendChild(t);
+    li.classList.add("novo-item");
+    li.style.fontFamily = 'Arial';
+
     if (inputValue === '') {
         alert("Você precisa descrever a tarefa");
     } else {
@@ -44,11 +47,11 @@ function addElemento() {
             div.style.display = "none";
         }
     }
-}    
+}
 
 const listItems = document.querySelectorAll('li');
 const newFontFamily = 'Arial';
 
 listItems.forEach(item => {
-  item.style.fontFamily = newFontFamily;
+    item.style.fontFamily = newFontFamily;
 });
