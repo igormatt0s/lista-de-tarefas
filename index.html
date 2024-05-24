@@ -16,10 +16,14 @@
             de maneira simples e eficaz. Assim, a "Lista de tarefas" permite que você crie ou exclua uma tarefa ou marque como
             feita.
         </p>
-        <input type="text" id="tarefa" placeholder="Informe a tarefa">
-        <span onclick="addElemento()" class="addBtn">Incluir</span>
+        <div>
+            <input type="text" id="tarefa" placeholder="Informe a tarefa">
+            <span onclick="addElemento()" class="addBtn">Incluir</span>
+            <span onclick="limpaLista()" class="limpaBtn">Limpar lista</span>
+        </div>
     </div>
     <ul id="itemLista">
+        
     </ul>
     <script src="script.js"></script>
 </body>

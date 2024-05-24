@@ -35,8 +35,6 @@ function addElemento() {
     let t = document.createTextNode(data + inputValue);
 
     li.appendChild(t);
-    li.classList.add("novo-item");
-    li.style.fontFamily = 'Arial';
     if (inputValue === '') {
         alert("Você precisa descrever a tarefa");
     } else {
@@ -60,5 +58,12 @@ let listItems = document.querySelectorAll('li');
 const newFontFamily = 'Arial';
 
 listItems.forEach(item => {
-  item.style.fontFamily = newFontFamily;
+    item.style.fontFamily = newFontFamily;
 });
+
+function limpaLista() {
+    let itemLista = document.getElementById('itemLista');
+    while (itemLista.firstChild) {
+        itemLista.removeChild(itemLista.firstChild);
+    }
+}
